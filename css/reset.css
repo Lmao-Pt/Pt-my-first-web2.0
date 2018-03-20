@@ -1,0 +1,52 @@
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote,
+dl, dt, dd, ul, ol, li, 
+pre,
+form, fieldset, legend, button, input, textarea,
+table, th, td /*清除默认内外边距*/ {
+	margin: 0;
+	padding: 0;
+}
+
+button, input, select, textarea /*for ie*/ {
+	font: 12px/24px Arial, 'Microsoft Yahei', "宋体", sans-serif;
+}
+
+address, cite, em, i {
+	font-style: normal;
+} /*将斜体扶正*/
+
+small { font-size: 12px; }
+
+li { list-style-type: none; }
+
+a { text-decoration: none; }
+
+legend { color: #000; } /*重置表单元素*/
+
+fieldset, img {border: 0;  } /*让a链接里的img无边框*/
+
+fieldset, input, select, textarea { font-size: 100%; line-height: normal; }
+
+table { border-collapse: collapse; border-spacing: 0; } /*重置表格元素*/
+
+input[ type="button"], input[type="submit"], input[type="reset"] {cursor: pointer;}
+
+iframe { display: block; }
+
+/*清除浮动*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	clear: both;
+	height: 0;
+
+  }
+
+  .clearfix {
+  	/*for ie6 7*/
+  	zoom: 1; 
+  }
+
+
+
